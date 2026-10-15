@@ -2,13 +2,33 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "MonPOS — Aide",
-  "colors": { "primary": "#1A8558", "light": "#4AA47C", "dark": "#17242B" },
-  "logo": { "light": "/logo/light.svg", "dark": "/logo/dark.svg", "href": "https://monpos.ci" },
+  "description": "Centre d'aide de MonPOS : vendre, encaisser, gérer le stock, les dépenses et la caisse de votre boutique, pas à pas.",
+  "colors": {
+    "primary": "#1A8558",
+    "light": "#4AA47C",
+    "dark": "#17242B"
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg",
+    "href": "https://monpos.ci"
+  },
   "favicon": "/favicon.svg",
-  "icons": { "library": "lucide" },
+  "icons": {
+    "library": "lucide"
+  },
   "navbar": {
-    "links": [{ "label": "Support WhatsApp", "href": "https://wa.me/2250544669533" }],
-    "primary": { "type": "button", "label": "Essayer la démo", "href": "https://demo.monpos.ci" }
+    "links": [
+      {
+        "label": "Support WhatsApp",
+        "href": "https://wa.me/2250544669533"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Essayer la démo",
+      "href": "https://demo.monpos.ci"
+    }
   },
   "navigation": {
     "languages": [
@@ -19,20 +39,110 @@
           {
             "tab": "Guide",
             "groups": [
-              { "group": "Démarrer", "pages": ["index", "demarrer/connexion", "demarrer/se-reperer", "demarrer/roles"] },
-              { "group": "La caisse", "pages": ["caisse/ouvrir-le-poste", "caisse/vendre", "caisse/remises-et-promotions", "caisse/vendre-a-credit", "caisse/mettre-de-cote", "caisse/ticket", "caisse/date-de-vente", "caisse/prix-achat", "caisse/cloturer-le-poste"] },
-              { "group": "Ventes et clients", "pages": ["ventes/historique", "ventes/corriger-rembourser", "ventes/creances", "ventes/clients", "ventes/echantillons", "ventes/promotions"] },
-              { "group": "Achats et stock", "pages": ["achats-stock/achats", "achats-stock/fournisseurs", "achats-stock/produits", "achats-stock/etiquettes", "achats-stock/stock", "achats-stock/inventaire", "achats-stock/emplacements"] },
-              { "group": "L'argent", "pages": ["argent/caisse-et-poches", "argent/depenses", "argent/postes"] },
-              { "group": "Suivre l'activité", "pages": ["rapports/tableau-de-bord", "rapports/cloture-du-jour", "rapports/rapports", "rapports/resultat-net", "rapports/valeur-du-stock"] },
-              { "group": "Administration", "pages": ["administration/utilisateurs", "administration/roles", "administration/parametres", "administration/whatsapp", "administration/sauvegarde", "administration/journal", "administration/notifications"] },
-              { "group": "Selon votre activité", "pages": ["options/proformas", "options/garage", "options/pieces-auto"] }
+              {
+                "group": "Démarrer",
+                "pages": [
+                  "index",
+                  "demarrer/connexion",
+                  "demarrer/se-reperer",
+                  "demarrer/roles"
+                ]
+              },
+              {
+                "group": "La caisse",
+                "pages": [
+                  "caisse/ouvrir-le-poste",
+                  "caisse/vendre",
+                  "caisse/remises-et-promotions",
+                  "caisse/vendre-a-credit",
+                  "caisse/mettre-de-cote",
+                  "caisse/ticket",
+                  "caisse/date-de-vente",
+                  "caisse/prix-achat",
+                  "caisse/cloturer-le-poste"
+                ]
+              },
+              {
+                "group": "Ventes et clients",
+                "pages": [
+                  "ventes/historique",
+                  "ventes/corriger-rembourser",
+                  "ventes/creances",
+                  "ventes/clients",
+                  "ventes/echantillons",
+                  "ventes/promotions"
+                ]
+              },
+              {
+                "group": "Achats et stock",
+                "pages": [
+                  "achats-stock/achats",
+                  "achats-stock/fournisseurs",
+                  "achats-stock/produits",
+                  "achats-stock/etiquettes",
+                  "achats-stock/stock",
+                  "achats-stock/inventaire",
+                  "achats-stock/emplacements"
+                ]
+              },
+              {
+                "group": "L'argent",
+                "pages": [
+                  "argent/caisse-et-poches",
+                  "argent/depenses",
+                  "argent/postes"
+                ]
+              },
+              {
+                "group": "Suivre l'activité",
+                "pages": [
+                  "rapports/tableau-de-bord",
+                  "rapports/cloture-du-jour",
+                  "rapports/rapports",
+                  "rapports/resultat-net",
+                  "rapports/valeur-du-stock"
+                ]
+              },
+              {
+                "group": "Administration",
+                "pages": [
+                  "administration/utilisateurs",
+                  "administration/roles",
+                  "administration/parametres",
+                  "administration/whatsapp",
+                  "administration/sauvegarde",
+                  "administration/journal",
+                  "administration/notifications"
+                ]
+              },
+              {
+                "group": "Selon votre activité",
+                "pages": [
+                  "options/proformas",
+                  "options/garage",
+                  "options/pieces-auto"
+                ]
+              }
             ]
           },
-          { "tab": "Questions fréquentes", "groups": [{ "group": "FAQ", "pages": ["faq"] }] }
+          {
+            "tab": "Questions fréquentes",
+            "groups": [
+              {
+                "group": "FAQ",
+                "pages": [
+                  "faq"
+                ]
+              }
+            ]
+          }
         ]
       }
     ]
   },
-  "footer": { "socials": { "website": "https://monpos.ci" } }
+  "footer": {
+    "socials": {
+      "website": "https://monpos.ci"
+    }
+  }
 }
