@@ -1,0 +1,45 @@
+---
+title: "Produits et catégories"
+description: "Créer un article, changer son prix, ses déclinaisons, sa photo, ajuster son stock."
+icon: "package"
+keywords: ["produit", "article", "prix", "catégorie", "déclinaison", "variante", "service", "photo"]
+---
+
+<Frame>
+  <img src="/images/app/products.png" alt="La liste des produits" />
+</Frame>
+
+Menu **Produits**.
+
+## Ajouter un produit
+
+**+ Ajouter un produit**. Le formulaire reste ouvert pour en ajouter plusieurs à la suite.
+
+| Champ | |
+|---|---|
+| Réf. principale * | Votre code article |
+| Nom * | Ce qui s'affiche à la caisse et sur le ticket |
+| Catégorie | Le rayon où il apparaît à la caisse |
+| Coût | Prix d'achat. Mis à jour ensuite par chaque [achat](/achats-stock/achats) |
+| Prix | Prix de vente |
+| Stock initial | Quantité en rayon aujourd'hui |
+| Service (sans stock) | Main d'œuvre, livraison… vendu comme un article, jamais compté en stock |
+
+## Trouver un produit
+
+Recherche par nom ou référence, puis filtres **Catégorie** et **Niveau de stock** (En stock, Stock faible, Rupture). **Afficher** 50 / 100 / 200 / Tout. Cochez **afficher inactifs** pour voir les produits désactivés.
+
+## Sur chaque ligne
+
+- **Photo** : cliquez pour en ajouter ou en retirer une.
+- **modifier** : nom, référence, catégorie, prix, coût, service, et **Vendu par**. Ex. `0,5` pour vendre par demi-kilo ou demi-mètre.
+- **±** **Ajuster le stock** : variation (+ ou −) et **Motif** obligatoire (Casse, Perte, Vol, Périmé, Erreur de saisie, Retour client…).
+- **déclinaisons** : tailles, couleurs… avec leur propre référence et prix. Imprimez aussi leurs étiquettes.
+- **étiquettes** : voir [Étiquettes code-barres](/achats-stock/etiquettes).
+- **Supprimer** : un produit qui a déjà des ventes est **désactivé** plutôt qu'effacé. **réactiver** le remet.
+
+## Les catégories
+
+**Gérer les catégories** : en créer, les renommer, les supprimer. Les produits d'une catégorie supprimée restent, sans catégorie.
+
+<Info>Le coût et la valeur du stock ne sont visibles que si votre rôle a le droit « Voir les coûts d'achat et les marges ».</Info>

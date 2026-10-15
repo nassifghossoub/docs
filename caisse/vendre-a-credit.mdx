@@ -1,0 +1,43 @@
+---
+title: "Vendre à crédit"
+description: "Le client paie plus tard, tout ou partie. Et comment encaisser sa dette."
+icon: "hand-coins"
+keywords: ["crédit", "dette", "acompte", "paiement partiel", "plafond", "échéance"]
+---
+
+<Steps>
+  <Step title="Choisissez d'abord le client">
+    Un crédit doit être dû par quelqu'un : sans client, MonPOS affiche « Choisissez d'abord un client pour vendre à crédit ». Une fois le client choisi, sa fiche apparaît dans le panier : **Solde**, **Plafond de crédit**, **Reste dû**.
+  </Step>
+  <Step title="Ajoutez les articles, puis touchez CREDIT">
+    La fenêtre **Paiement partiel** s'ouvre : « Combien le client paie-t-il maintenant ? »
+  </Step>
+  <Step title="Indiquez l'acompte">
+    - Il paie une partie : tapez le montant dans **Payé maintenant** et choisissez **Payé par** (espèces, Wave…), puis **Valider**.
+    - Il ne paie rien : **Rien maintenant**.
+
+    MonPOS affiche le **Reste à crédit**.
+  </Step>
+  <Step title="Validez avec le bouton Total">
+    Le reste part dans les [Créances](/ventes/creances) et sur le compte du client. Le ticket montre « Payé maintenant » et « Reste dû ».
+  </Step>
+</Steps>
+
+## Échéance et plafond
+
+- **Échéance** : 30 jours par défaut, ou le délai propre au client s'il en a un (voir [Clients](/ventes/clients)).
+- **Plafond de crédit** : si le client en a un et que la vente le ferait dépasser, elle est refusée. Un plafond vide ou à 0 veut dire « pas de limite ».
+
+## Encaisser une dette à la caisse
+
+Quand un client qui doit de l'argent est choisi, le bloc **Encaisser sur la dette** apparaît :
+
+1. Tapez le **Montant à encaisser** (au plus ce qu'il doit).
+2. Choisissez le moyen de paiement.
+3. **Encaisser**. MonPOS règle d'abord ses factures les plus anciennes.
+
+<Info>
+  On peut aussi encaisser une dette depuis [Créances](/ventes/creances), facture par facture, ou depuis la liste des [Clients](/ventes/clients).
+</Info>
+
+<Warning>Vendre à crédit demande le droit « Vendre à crédit ».</Warning>

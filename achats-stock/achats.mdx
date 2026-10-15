@@ -1,0 +1,51 @@
+---
+title: "Enregistrer un achat"
+description: "La marchandise reçue d'un fournisseur : stock, coût, frais et paiement."
+icon: "truck"
+keywords: ["achat", "fournisseur", "livraison", "réception", "frais", "douane", "transport", "coût de revient"]
+---
+
+<Frame>
+  <img src="/images/app/purchases.png" alt="L'écran Achats" />
+</Frame>
+
+Menu **Achats** → **+ Enregistrer l'achat**.
+
+<Steps>
+  <Step title="L'en-tête">
+    **Fournisseur** : choisissez-le, ou **Ajouter un fournisseur** sans quitter la page. Puis la **Date de l'achat**, une **Note** (n° de bon de livraison, camion…) et le **Statut** :
+    - **Reçu** : la marchandise est là ;
+    - **En transit** : commandée, pas encore arrivée.
+  </Step>
+  <Step title="Les lignes">
+    Pour chaque produit : la **Qté** et le **Prix fournisseur**, pré-rempli avec le dernier prix payé. Une **Remise** est possible en % ou par unité. MonPOS calcule le **Coût net** et le total.
+
+    - Produit nouveau ? **Ajouter un produit** le crée sur place.
+    - 🔍 montre l'**historique des prix d'achat** : dernier, plus bas, plus haut, moyenne, par fournisseur.
+  </Step>
+  <Step title="Les frais d'achat (facultatif)">
+    Douane, transport, manutention… payés à **d'autres** que le fournisseur. MonPOS les répartit sur les lignes et affiche le **Coût de revient / unité**.
+  </Step>
+  <Step title="Le paiement">
+    **Payé par** : une ou plusieurs poches (espèces, Wave…) dont la somme doit faire le total. Ou cochez **Acheter à crédit** : **Payé maintenant** et **Échéance**. MonPOS montre ce qui **restera dû** et ce que vous devez **déjà** à ce fournisseur.
+  </Step>
+  <Step title="Enregistrer l'achat">
+    Chaque ligne **entre en stock** et son coût de revient devient le **nouveau coût du produit**.
+  </Step>
+</Steps>
+
+<Tip>Un achat interrompu n'est pas perdu : **Brouillons** garde les achats en cours, comme à la caisse.</Tip>
+
+## Achat en transit
+
+Rien n'entre en stock tant que la marchandise n'est pas arrivée. À la livraison : **Marquer comme livré**. Le stock est ajouté et le coût mis à jour. La dette envers le fournisseur, elle, compte dès l'enregistrement.
+
+## Les achats récents
+
+Filtres par **fournisseur** et par **statut**, avec le total et le **reste à payer**. Pour chaque achat :
+
+- **Modifier** : s'il est déjà reçu, le stock est corrigé de la différence. Si le nouveau total est plus bas que ce qui a été payé, gardez la différence comme **avoir fournisseur**.
+- **Imprimer / PDF** et **Partager** : le bon d'achat.
+- **Supprimer l'achat** : le stock baisse et l'argent revient dans chaque poche.
+
+<Info>Les frais d'achat apparaissent aussi dans les [Dépenses](/argent/depenses) (« Frais d'achat »). Ils ne sont pas comptés deux fois dans le [Résultat net](/rapports/resultat-net).</Info>

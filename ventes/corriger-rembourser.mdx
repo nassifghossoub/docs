@@ -1,0 +1,42 @@
+---
+title: "Corriger, rembourser ou supprimer une vente"
+description: "Trois façons de réparer une erreur, et leurs effets sur le stock et l'argent."
+icon: "undo-2"
+keywords: ["modifier", "corriger", "rembourser", "retour", "annuler", "supprimer"]
+---
+
+Toutes ces actions se font depuis **Ventes** → cliquez sur la vente.
+
+## Modifier : corriger une erreur
+
+**Modifier** rouvre la vente dans la caisse avec un bandeau « Modification de la vente n°… ». Changez les articles, les quantités ou le client, puis **Enregistrer la vente n°…**. La facture est corrigée **en gardant son numéro**, et le stock suit.
+
+<Info>Si un panier était en cours, MonPOS le met de côté tout seul. Il vous attend dans **En attente**. **Abandonner** quitte la modification sans rien changer.</Info>
+
+<Tip>Un client rapporte **une partie** des articles ? Modifiez la vente et baissez les quantités.</Tip>
+
+## Rembourser : annuler toute la vente
+
+**Rembourser**, puis confirmez. Pour toute la vente :
+
+- les articles **reviennent en stock** ;
+- l'argent déjà encaissé est **rendu** et sort de la caisse ;
+- la dette restante, s'il y en a une, est annulée.
+
+La vente reste visible avec le statut **Remboursée**.
+
+## Supprimer : effacer pour de bon
+
+**Supprimer** fait disparaître la vente des ventes, du tableau de bord, des rapports et du compte du client. Les articles reviennent en stock et les paiements sortent de la caisse.
+
+<Danger>
+  C'est définitif. Seul le [Journal d'activité](/administration/journal) en garde une copie. Réservé par défaut à l'administrateur.
+</Danger>
+
+| | Modifier | Rembourser | Supprimer |
+|---|---|---|---|
+| Garde le numéro | ✓ | ✓ | — |
+| Stock | ajusté | revient | revient |
+| Argent | ajusté | rendu | retiré |
+| Reste dans les rapports | ✓ | comme remboursée | — |
+| Droit nécessaire | Modifier une vente | Rembourser | Supprimer |

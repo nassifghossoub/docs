@@ -1,0 +1,37 @@
+---
+title: "Remises et promotions"
+description: "Baisser le prix d'une ligne, de tout le ticket, ou appliquer une promotion."
+icon: "percent"
+keywords: ["remise", "réduction", "promotion", "rabais", "pourcentage"]
+---
+
+## Remise sur une ligne
+
+Dans le panier, chaque ligne a une case **rem**. Tapez la remise, puis touchez le bouton à côté pour passer de **F** (montant en francs) à **%** (pourcentage). L'ancien prix apparaît barré à côté du nouveau.
+
+<Tip>
+  Votre boutique préfère taper directement le prix vendu ? Dans Paramètres → POS, cochez « Saisir le prix de vente au lieu de la remise ». La case **rem** devient **Prix**, et MonPOS calcule la remise tout seul.
+</Tip>
+
+## Remise sur tout le ticket
+
+Sous le panier, **Remise sur commande** : même principe, en montant ou en pourcentage. Une remise en montant reste fixe même si on ajoute des articles.
+
+## Appliquer une promotion
+
+Si des [promotions](/ventes/promotions) sont actives, une liste **Aucune promotion** apparaît sous le panier. Choisissez-en une, une seule par vente.
+
+- Une promotion qui demande un minimum d'articles est grisée (« demande n articles ») tant que le panier ne l'atteint pas.
+- « Achetez X obtenez Y » : les articles offerts sont pris sur les dernières lignes.
+
+## Dans quel ordre MonPOS calcule
+
+1. Les remises de ligne
+2. Les articles offerts (achetez X obtenez Y)
+3. La promotion en % ou en montant
+4. La remise sur commande
+5. La taxe, si la boutique en a une
+
+<Warning>
+  Accorder une remise ou une promotion demande le droit « Accorder une remise ». Sans lui, la vente est refusée avec le message « Votre rôle ne peut pas accorder de remise. »
+</Warning>

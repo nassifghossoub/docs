@@ -1,0 +1,48 @@
+---
+title: "Paramètres"
+description: "Logo, taxe, moyens de paiement, code PIN, stock, e-mails, boutiques."
+icon: "settings"
+keywords: ["paramètres", "réglages", "logo", "taxe", "devise", "paiement", "pin", "smtp", "boutique"]
+---
+
+<Frame>
+  <img src="/images/app/settings-paiement.png" alt="Paramètres, onglet Méthodes de paiement" />
+</Frame>
+
+Menu de votre nom → **Paramètres**. Réservé à l'administrateur.
+
+<AccordionGroup>
+  <Accordion title="Entreprise" icon="building">
+    **Logo** (aussi sur l'écran de connexion et l'onglet du navigateur), **Cachet** (imprimé sous la signature des factures, PNG à fond transparent), **Nom de l'entreprise**, **Symbole de la devise**, **Taux de taxe (%)**, format de l'heure et de la date, fuseau horaire, téléphone, adresse.
+
+    Un taux de taxe à **0** fait disparaître la ligne de taxe de la caisse, des reçus et des rapports.
+  </Accordion>
+  <Accordion title="POS (la caisse)" icon="monitor">
+    - **Saisir le prix de vente au lieu de la remise** : la caisse demande le prix vendu au lieu d'une remise.
+    - **Code PIN « Prix d'achat »** (4 à 8 chiffres) : protège le bouton [Prix d'achat](/caisse/prix-achat) et le [Tableau de bord](/rapports/tableau-de-bord). **Supprimer le code** l'enlève.
+  </Accordion>
+  <Accordion title="Stock" icon="package">
+    - **Vendre même sans stock** : coché, on peut vendre un article à 0, et son stock passe en négatif. Décoché, une vente ne dépasse jamais le stock.
+    - **Emplacements (section et tiroir)** : active les [sections et tiroirs](/achats-stock/emplacements).
+  </Accordion>
+  <Accordion title="SMTP (e-mails)" icon="mail">
+    Pour envoyer les e-mails de mot de passe oublié et les rapports : hôte, port, SSL, utilisateur, mot de passe, expéditeur. **Tester la connexion** avant d'enregistrer.
+  </Accordion>
+  <Accordion title="Méthodes de paiement" icon="credit-card">
+    Cinq emplacements : espèces, carte, mobile, MTN, crédit. Pour chacun, le **nom affiché** à la caisse et sur les reçus, et **Activé** ou non.
+
+    Exemple : renommez « Carte » en **Orange Money** et « Mobile » en **Wave**. Les logos s'affichent alors tout seuls à la caisse. Décocher **Crédit** retire la vente à crédit.
+  </Accordion>
+  <Accordion title="WhatsApp" icon="message-circle">
+    Le message envoyé avec chaque document. Voir [Envoyer sur WhatsApp](/administration/whatsapp).
+  </Accordion>
+  <Accordion title="Boutiques" icon="store">
+    Ajouter une boutique, la **renommer**, ou la **fermer** : elle disparaît de la caisse et des listes, mais son historique reste. La dernière ne peut pas être fermée.
+  </Accordion>
+  <Accordion title="Autres" icon="ellipsis">
+    **Destinataires des rapports** (e-mails séparés par des virgules), **URL de l'application web** (pour les liens des e-mails), et le **QR code de l'application mobile** à scanner pour l'installer.
+  </Accordion>
+  <Accordion title="Sauvegarde" icon="hard-drive-download">
+    Voir [Sauvegarde](/administration/sauvegarde).
+  </Accordion>
+</AccordionGroup>

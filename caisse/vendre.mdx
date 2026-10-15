@@ -1,0 +1,49 @@
+---
+title: "Faire une vente"
+description: "De l'article scanné au ticket, pas à pas."
+icon: "shopping-cart"
+keywords: ["caisse", "vente", "panier", "encaisser", "scanner", "code-barres", "wave", "orange money", "mtn"]
+---
+
+<Frame caption="La caisse : les rayons à gauche, le panier à droite">
+  <img src="/images/caisse.webp" alt="L'écran de caisse avec un panier de 5 articles" />
+</Frame>
+
+<Steps>
+  <Step title="Choisissez le client (facultatif)">
+    En haut, la liste affiche **Sur place** par défaut, c'est-à-dire un client de passage. Pour une vente à crédit ou pour suivre un client, tapez son nom ou son numéro de téléphone.
+  </Step>
+  <Step title="Ajoutez les articles">
+    Au choix :
+    - **scannez** le code-barres avec la douchette ;
+    - tapez le nom ou la référence dans la barre de recherche, puis **Entrée** ;
+    - touchez un **rayon** (Boissons, Épicerie…), puis l'article.
+
+    Un article scanné deux fois passe à la quantité 2 sur la même ligne. Si l'article a des déclinaisons (taille, couleur…), MonPOS vous demande laquelle.
+  </Step>
+  <Step title="Vérifiez les quantités">
+    **−** et **+** sur chaque ligne, ou tapez la quantité. Les articles vendus au poids ou au mètre acceptent les décimales (`1,5`). La croix **✕** retire la ligne.
+  </Step>
+  <Step title="Choisissez le moyen de paiement">
+    Les boutons en bas portent les noms de votre boutique : par exemple **CASH**, **OM PAY**, **WAVE**, **MTN**, **CREDIT**. Pour le crédit, voir [Vendre à crédit](/caisse/vendre-a-credit).
+  </Step>
+  <Step title="Appuyez sur le gros bouton vert « Total »">
+    La vente est enregistrée et numérotée, et le stock baisse tout de suite. Le ticket s'affiche : **Imprimer** ou **Nouvelle vente**.
+  </Step>
+</Steps>
+
+## Ce que montre une tuile article
+
+Nom, référence, prix et **reste n** (le stock). Le stock passe en rouge à 5 ou moins. Un service (main d'œuvre, livraison…) affiche « Service (sans stock) ».
+
+<Note>
+  Un article **épuisé n'apparaît pas** à la caisse, sauf si la boutique a coché « Vendre même sans stock » (Paramètres → Stock). Le stock passe alors en négatif.
+</Note>
+
+## Bon à savoir
+
+- **Un seul moyen de paiement par vente.** Si un client paie une partie en espèces et le reste plus tard, utilisez [le crédit avec acompte](/caisse/vendre-a-credit).
+- **MonPOS ne calcule pas la monnaie à rendre** : comptez-la comme d'habitude.
+- **Le panier ne se perd pas** si vous quittez la page ou si l'ordinateur redémarre.
+- **Internet est nécessaire pour encaisser.** Sans connexion, la vente est refusée ; réessayez quand la connexion revient.
+- **Pour revenir aux rayons** après une recherche : **← Retour aux catégories**.

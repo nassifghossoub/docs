@@ -1,0 +1,35 @@
+---
+title: "Stock"
+description: "Ce qui reste, ce qu'il faut racheter, et l'historique de chaque mouvement."
+icon: "warehouse"
+keywords: ["stock", "réapprovisionner", "minimum", "mouvements", "ajustement", "transfert", "rupture"]
+---
+
+<Frame>
+  <img src="/images/app/inventory.png" alt="L'écran Stock" />
+</Frame>
+
+Menu **Stock**. Six onglets :
+
+<Tabs>
+  <Tab title="Stock">
+    - **Valeur du stock (coût)**, **À réapprovisionner** (produits sous leur minimum) et **Achat suggéré**.
+    - Le tableau **Niveaux de stock** : quantité ici et au total, statut **OK / BAS / ÉPUISÉ**, et **Exporter CSV**.
+    - **Min** : tapez le seuil d'alerte de chaque produit. Quand le stock passe dessous, une [notification](/administration/notifications) arrive, et MonPOS suggère de racheter assez pour atteindre deux fois le minimum.
+  </Tab>
+  <Tab title="Mouvements">
+    Chaque entrée et sortie de stock : quand, quel produit, pourquoi (vente, achat, ajustement…), combien, qui. Filtre par produit.
+  </Tab>
+  <Tab title="Inventaire">
+    Le comptage physique. Voir [Faire l'inventaire](/achats-stock/inventaire).
+  </Tab>
+  <Tab title="Ajustement">
+    Corriger le stock d'un produit : **Variation (+/-)**, **Motif** (Casse, Perte, Vol, Périmé / expiré, Endommagé à la réception, Erreur de saisie, Retour client, Offert, Consommation interne, Autre) et une **Note** (obligatoire pour « Autre »). Puis **Appliquer l'ajustement**.
+  </Tab>
+  <Tab title="Historique">
+    Tous les ajustements, filtrables par produit, motif et dates, avec un total **par motif**. Pratique pour voir combien la casse ou le vol vous coûtent.
+  </Tab>
+  <Tab title="Transfert">
+    Seulement avec plusieurs boutiques : déplacer du stock d'une boutique à l'autre (**Depuis**, **Vers**, **Qté**, puis **Transférer**).
+  </Tab>
+</Tabs>

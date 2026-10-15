@@ -1,0 +1,39 @@
+---
+title: "Qui peut faire quoi"
+description: "Les rôles Administrateur, Gérant et Caissier, et ce que chacun voit."
+icon: "shield"
+keywords: ["rôle", "permission", "caissier", "gérant", "droits"]
+---
+
+Chaque utilisateur a un **rôle**. Le rôle décide des menus qu'il voit et des actions qu'il peut faire.
+
+| Rôle | En résumé |
+|---|---|
+| **Administrateur** | Accès complet, y compris les utilisateurs, les rôles et les paramètres. |
+| **Gérant** | Fait tourner la boutique au quotidien, sans toucher aux comptes ni aux réglages. |
+| **Caissier** | Tient la caisse : encaisse, ouvre et ferme son poste, encaisse les dettes. |
+
+## Les actions sensibles, rôle par rôle
+
+Ces actions coûtent de l'argent ou effacent quelque chose. Voici les réglages de départ :
+
+| Action | Administrateur | Gérant | Caissier |
+|---|:-:|:-:|:-:|
+| Voir les coûts d'achat et les marges | ✓ | ✓ | — |
+| Afficher les prix d'achat à la caisse (avec le code PIN) | ✓ | ✓ | — |
+| Accorder une remise | ✓ | ✓ | ✓ |
+| Vendre à crédit | ✓ | ✓ | ✓ |
+| Rembourser une vente | ✓ | ✓ | — |
+| Modifier une vente enregistrée | ✓ | ✓ | — |
+| Convertir un échantillon en vente | ✓ | ✓ | — |
+| Supprimer définitivement (client, fournisseur, vente, dépense…) | ✓ | — | — |
+| Exporter et partager un document (PDF, WhatsApp) | ✓ | ✓ | — |
+| Télécharger la sauvegarde complète | ✓ | — | — |
+
+<Tip>
+  Ces réglages ne sont pas figés. L'administrateur peut les changer, ou créer ses propres rôles (« Vendeur senior », « Magasinier »…) : voir [Rôles](/administration/roles).
+</Tip>
+
+<Info>
+  Si vous ouvrez une page qui ne vous est pas permise, MonPOS affiche **Accès refusé** avec un bouton pour revenir au tableau de bord. Si une action est refusée, un message vous l'explique, par exemple « Votre rôle ne peut pas accorder de remise. »
+</Info>

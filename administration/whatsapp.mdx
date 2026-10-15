@@ -1,0 +1,40 @@
+---
+title: "Envoyer sur WhatsApp"
+description: "Envoyer une facture, un bon ou une proforma au client en deux clics."
+icon: "message-circle"
+keywords: ["whatsapp", "partager", "envoyer", "facture", "lien", "message"]
+---
+
+<Frame>
+  <img src="/images/app/settings-whatsapp.png" alt="Paramètres WhatsApp" />
+</Frame>
+
+## Envoyer un document
+
+Sur une vente, un échantillon, un achat ou une proforma : **Partager**.
+
+1. MonPOS prépare le message avec un **lien vers le PDF**.
+2. Modifiez-le si besoin pour ce client.
+3. **Ouvrir WhatsApp** : la discussion s'ouvre avec le numéro WhatsApp du client, ou son téléphone.
+
+<Info>Le lien du PDF est consultable par toute personne qui l'a. Ne l'envoyez qu'au client concerné.</Info>
+
+## Régler le message (administrateur)
+
+**Paramètres → WhatsApp** :
+
+- **Proposer le bouton Partager sur WhatsApp** : décoché, le bouton disparaît partout.
+- Un message par document : **Facture**, **Bon d'échantillon**, **Bon d'achat** (et **Proforma** selon l'activité).
+- **Insérer** des champs remplis tout seuls : `{boutique}` `{numero}` `{montant}` `{client}` `{date}` `{lien}`.
+- **Aperçu** en direct, et **Rétablir le message par défaut**.
+
+Message par défaut d'une facture :
+
+```
+{boutique} - Facture N° {numero} - {montant}
+{lien}
+```
+
+<Tip>Une ligne dont tous les champs sont vides est retirée (par exemple sans client). Sans `{lien}`, le lien est ajouté à la fin.</Tip>
+
+Pour marquer une facture comme remise au client, cochez **Envoyée** dans [Ventes](/ventes/historique).
