@@ -1,8 +1,8 @@
 ---
 title: "Produits et catégories"
-description: "Créer un article, changer son prix, ses déclinaisons, sa photo, ajuster son stock."
+description: "Créer un article, changer son prix, ses déclinaisons, sa photo, ajuster son stock, voir ses achats et ses ventes."
 icon: "package"
-keywords: ["produit", "article", "prix", "catégorie", "déclinaison", "variante", "service", "photo"]
+keywords: ["produit", "article", "prix", "catégorie", "déclinaison", "variante", "service", "photo", "historique", "achats", "ventes"]
 ---
 
 <Frame>
@@ -37,6 +37,24 @@ Recherche par nom ou référence, puis filtres **Catégorie** et **Niveau de sto
 - **déclinaisons** : tailles, couleurs… avec leur propre référence et prix. Imprimez aussi leurs étiquettes.
 - **étiquettes** : voir [Étiquettes code-barres](/achats-stock/etiquettes).
 - **Supprimer** : un produit qui a déjà des ventes est **désactivé** plutôt qu'effacé. **réactiver** le remet.
+- **Historique** (en bout de ligne) : tous les achats et toutes les ventes de cet article. Voir ci-dessous.
+
+## Historique d'un produit
+
+Le bouton **Historique**, en bout de ligne, ouvre la fenêtre **Achats et ventes** de l'article.
+
+<Frame>
+  <img src="/images/app/product-history.png" alt="La fenêtre Achats et ventes d'un produit" />
+</Frame>
+
+- **Du / Au** : la période. Par défaut, les 3 dernières années (le maximum).
+- En haut, quatre chiffres : **Acheté (reçu)**, **Vendu**, **Montant vendu** et **Stock actuel**.
+- Onglet **Ventes** : date, numéro de facture, client, quantité, prix unitaire et total. Une facture pas encore réglée porte la mention **à payer**.
+- Onglet **Achats** : date, fournisseur, quantité, prix payé par unité et total. Un achat pas encore livré porte la mention **En transit** et ne compte pas dans « Acheté (reçu) ».
+
+<Note>Seules les ventes terminées comptent : les tickets remboursés et les échantillons n'apparaissent pas. Le total d'une vente est la part de cet article dans la facture, remise comprise.</Note>
+
+<Info>L'onglet **Ventes** demande l'accès aux **Rapports**, l'onglet **Achats** l'accès aux **Achats**. Les prix d'achat ne s'affichent que si votre rôle a le droit « Voir les coûts d'achat et les marges ».</Info>
 
 ## Les catégories
 
