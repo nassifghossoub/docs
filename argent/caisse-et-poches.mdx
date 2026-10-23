@@ -33,3 +33,22 @@ Vous mettez de la monnaie dans le tiroir, ou le patron retire de l'argent ? Dans
 1. **Fond entrant** (ajout) ou **Fond sortant** (retrait) ;
 2. la **Poche**, le **Montant** et le **Motif** ;
 3. **Ajouter un mouvement**.
+
+## Corriger un mouvement
+
+Un montant mal tapé, ajouté au lieu de retiré, la mauvaise poche, le mauvais jour ? Dans le tableau des mouvements, cliquez sur **✎** au bout de la ligne « Argent ajouté » ou « Argent retiré ».
+
+<Frame>
+  <img src="/images/app/caisse-modifier-mouvement.png" alt="La fenêtre Modifier ce mouvement" />
+</Frame>
+
+1. changez ce qui est faux : **Argent ajouté** ou **Argent retiré**, la **Poche**, le **Montant**, le **Motif** ou la **Date** ;
+2. **Enregistrer**.
+
+Le solde de la poche, les **Entrées / Sorties** de la période et les rapports (Clôture du jour, Rapports) suivent tout de suite la correction. Une date changée déplace le mouvement vers ce jour-là, à la même heure.
+
+<Info>Chaque correction est notée dans le [Journal d'activité](/administration/journal) : « Mouvement de caisse corrigé », avec qui l'a faite, quand, et l'ancienne valeur → la nouvelle.</Info>
+
+<Note>Le ✎ n'apparaît que sur l'argent ajouté ou retiré. Une vente, une dépense ou un achat se corrige depuis sa propre page. Un transfert entre poches ne se modifie pas.</Note>
+
+<Warning>Si la poche a été comptée (**Déclarer un solde**) après le mouvement corrigé, le solde actuel part de ce comptage et ne bouge pas. Seuls les chiffres de la période d'avant changent.</Warning>
